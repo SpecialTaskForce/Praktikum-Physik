@@ -25,20 +25,30 @@ Der Versuch des Tr\"agheitsmoments eignet sich gut als Einstieg ins Physikprakti
 % Theorie
 %%
 \section*{Theorie}
-% Tr\"agheitsmoment -------> bruchemer äue ni
-% \[  J = \sum{mr^2} \]
 Das Tr\"agheitsmoment $J_{Quader}$ eines homogenen Quaders der Masse $m$ mit Lange $l$ und Breite $b$ ist durch folgende Formel gegeben:
-\[ J_{Quader} = \frac{m}{12}(l^2 + b^2) \]
+\begin{equation}
+ J_{Quader} = \frac{m}{12}(l^2 + b^2)
+\end{equation}
 Das Tr\"agheitsmoment $J_{Zylinder}$ eines homogenen Zylinders der Masse $m$ mit Radius $R$ und H\"ohe $h$ ist durch folgende Formel gegeben:
-\[  J_{Zylinder} = \frac{m}{12}(h^2 + 3R^2) \]
+\begin{equation}
+J_{Zylinder} = \frac{m}{12}(h^2 + 3R^2)
+\end{equation}
 Das Tr\"agheitsmoment $J_{Scheibe}$ einer homogenen Scheibe der Masse $m$ mit Radius $R$ ist durch folgende Formel gegeben:
-\[  J_{Scheibe} = \frac{1}{2}mR^2 \]
+\begin{equation}
+J_{Scheibe} = \frac{1}{2}mR^2
+\end{equation}
 Die Rotationsenergie $E_{rot}$ eines beliebigen K\"orpers mit Tr\"agheitsmoment $J$ und Winkelgeschindigkeit $\omega$ ist durch folgende Formel gegeben:
-\[ E_{rot} = \frac{1}{2}J\omega^2 \]
+\begin{equation}
+E_{rot} = \frac{1}{2}J\omega^2
+\end{equation}
 Der Drehimpuls $L$ bei einem Tr\"agheitsmoment von $J$ und Winkelgeschwindigkeit $\omega$ ist durch folgende Formel gegeben:
-\[ L = J\omega \]
+\begin{equation}
+L = J\omega
+\end{equation}
 Das Tr\"agheitsmoment $J$ eines beliebigen K\"orpers bei einer Periodenschwingungsdauer von $T$ und Federkonstante $k$ ist durch folgende Formel gegeben:
-\[ J = \frac{T^2k}{4\pi^2} \]
+\begin{equation} \label{eq:k}
+J = \frac{T^2k}{4\pi^2}
+\end{equation}
 
 %%
 % Experiment
@@ -95,7 +105,10 @@ $T_{6}$&$T_{7}$&$T_{8}$&$T_{9}$&$T_{10}$\\
 
 % Auswertung
 \subsection*{Auswertung}
-
+\[ 10\overline{T}_0 = 12.92\mbox{s} \Rightarrow \overline{T}_0 = (1.29 \pm 0.05) \mbox{s} \]
+\[ 10\overline{T}_6 = 25.32\mbox{s} \Rightarrow \overline{T}_6 = (2.53 \pm 0.05) \mbox{s} \]
+Mit diesen beiden Werten l\"asst sich nach Formel \ref{eq:k} die Federkonstante $k$ berechnen:
+\[ k = \frac{8md^2\pi^2}{T_6^2 - T_0^2} = (0.01799 \pm 0.00083) \mbox{Nm}^{-1} \]
 
 \section*{Experiment II}
 % Aufbau und Ablauf
