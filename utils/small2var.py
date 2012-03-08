@@ -22,7 +22,7 @@ def avg(_list):
 
 for d in range(len(data)):
     row = data[d]
-    print "%s&%s&%s s\\\\" % (d, "&".join(["%s s" % t for t in row]), "%.2f" % avg(row))
+    print "%scm&%s&%ss\\\\" % (d, "&".join(["%ss" % t for t in row]), "%.2f" % avg(row))
 
 
 
