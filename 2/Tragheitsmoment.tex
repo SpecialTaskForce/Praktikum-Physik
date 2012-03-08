@@ -31,6 +31,8 @@ Das Tr\"agheitsmoment $J_{Quader}$ eines homogenen Quaders der Masse $m$ mit Lan
 \[ J_{Quader} = \frac{m}{12}(l^2 + b^2) \]
 Das Tr\"agheitsmoment $J_{Zylinder}$ eines homogenen Zylinders der Masse $m$ mit Radius $R$ und H\"ohe $h$ ist durch folgende Formel gegeben:
 \[  J_{Zylinder} = \frac{m}{12}(h^2 + 3R^2) \]
+Das Tr\"agheitsmoment $J_{Scheibe}$ einer homogenen Scheibe der Masse $m$ mit Radius $R$ ist durch folgende Formel gegeben:
+\[  J_{Scheibe} = \frac{1}{2}mR^2 \]
 Die Rotationsenergie $E_{rot}$ eines beliebigen K\"orpers mit Tr\"agheitsmoment $J$ und Winkelgeschindigkeit $\omega$ ist durch folgende Formel gegeben:
 \[ E_{rot} = \frac{1}{2}J\omega^2 \]
 Der Drehimpuls $L$ bei einem Tr\"agheitsmoment von $J$ und Winkelgeschwindigkeit $\omega$ ist durch folgende Formel gegeben:
@@ -147,6 +149,21 @@ $T_{6}$&$T_{7}$&$T_{8}$&$T_{9}$&$T_{10}$\\
 11.8s&11.9s&11.8s&11.95s&11.7s\\
 \hline
 \end{tabular}
+
+% Kontrollrechnung
+\subsection*{Kontrollrechnung}
+Aus den Gr\"ossen- und Gewichtsangaben folgt ein theoretisches Tr\"agheitsmoment von
+\[ J_{Quader} = \frac{m}{12}(l^2 + b^2) = \frac{0.235}{12}(0.02^2 + 0.07^2) = 0.000103792 \]
+f\"ur den Quader und
+\[  J_{Scheibe} = \frac{1}{2}mR^2 = \frac{1}{2} * 0.3 * 0.05^2 = 0.000375 \]
+f\"ur die Scheibe.
+Die durchschnittliche Periondendauer des Tisches betr\"agt 1.182s, beim Quader sind es 1.28s und die Scheibe ben\"otigt 1.5005s f\"ur eine Periode.
+Das Tr\"agheitsmoment des Tisches betr\"agt nach unseren Messungen
+\[ J_{Tisch} = \frac{T^2k}{4\pi^2} = \frac{1.182^2*0.0179882}{4\pi^2} = 0.000636594 \]
+Das Tr\"agheitsmoment des Quaders betr\"agt nach unseren Messungen
+\[ J_{Quader} = \frac{T^2k}{4\pi^2} - J_{Tisch} = \frac{1.28^2*0.0179882}{4\pi^2} - 0.000636594 = 0.000109936 \]
+Das Tr\"agheitsmoment der Scheibe betr\"agt nach unseren Messungen
+\[ J_{Scheibe} = \frac{T^2k}{4\pi^2} - J_{Tisch} = \frac{1.5005^2*0.0179882}{4\pi^2} - 0.000636594 = 0.000389293 \]
 
 % Auswertung
 \subsection*{Auswertung}
