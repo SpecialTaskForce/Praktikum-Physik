@@ -1,0 +1,8 @@
+*.aux
+*.log
+*.synctex.gz
+*~
+*.orig
+.DS_Store
+*.pyc
+*.numbers
