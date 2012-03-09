@@ -105,7 +105,7 @@ $T_{6}$&$T_{7}$&$T_{8}$&$T_{9}$&$T_{10}$\\
 
 \subsection*{Fehlerrechnung}
 \[ s_{T_0} = s_{T_6} = 0.05\mbox{s} \]
-\[ s_k^2 = \left( \frac{\partial k}{\partial T_6} \right)^2 {s_{T_0}}^2 + \left( \frac{\partial k}{\partial T_0} \right)^2 {s_{T_6}}^2 = \frac{0.64\pi^4m^2d^4}{(T_6^2-T_0^2)^3} \]
+\[ {s_k}^2 = \left( \frac{\partial k}{\partial T_6} \right)^2 {s_{T_0}}^2 + \left( \frac{\partial k}{\partial T_0} \right)^2 {s_{T_6}}^2 = \frac{0.64\pi^4m^2d^4}{({T_6}^2-{T_0}^2)^3} \]
 \[ \Rightarrow s_k = 0.00083\mbox{Nm}^{-1} \]
 
 % Auswertung
@@ -113,7 +113,7 @@ $T_{6}$&$T_{7}$&$T_{8}$&$T_{9}$&$T_{10}$\\
 \[ 10\overline{T}_0 = 12.92\mbox{s} \Rightarrow \overline{T}_0 = (1.29 \pm 0.05) \mbox{s} \]
 \[ 10\overline{T}_6 = 25.32\mbox{s} \Rightarrow \overline{T}_6 = (2.53 \pm 0.05) \mbox{s} \]
 Mit diesen beiden Werten l\"asst sich nach Formel \ref{eq:k} die Federkonstante $k$ berechnen:
-\[ k = \frac{8md^2\pi^2}{T_6^2 - T_0^2} = (0.01799 \pm 0.00083) \mbox{Nm}^{-1} \]
+\[ k = \frac{8md^2\pi^2}{{T_6}^2 - {T_0}^2} = (0.01799 \pm 0.00083) \mbox{Nm}^{-1} \]
 
 \section*{Experiment II}
 % Aufbau und Ablauf
@@ -225,7 +225,13 @@ $d$&$T_1$&$T_2$&$T_3$&$T_4$&$T_5$&$10\overline{T}$\\
 
 % Auswertung
 \subsection*{Auswertung}
-
+\subsubsection*{Grafische Darstellung}
+Um den Zusammenhang zwischen $d$ und $J$ besser zeigen zu k\"onnen bilden wir ab auf $x = d^2$ und $y = J^2$.
+Die Regressionsgerade l\"asst sich nach Formel 1.27 aus dem Skript wie folgt berechnen:
+\[ s_{xy} = \frac{1}{N - 1}\sum_{i=1}^{N}(x_i - \overline{x})(y_i - \overline{y}) =  0.001148 \]
+\[ s_x^2 = \frac{1}{N - 1}\sum_{i=1}^{N}(x_i - \overline{x})^2 =  1.82\cdot 10^{-6} \]
+\[ \hat{y} = \frac{s_{xy}}{s_x^2}(x - \overline{x}) + \overline{y} = 630.35x + 1.5252 \]
+\includegraphics[width=8cm]{diagram.pdf}
 
 %%
 % Diskussion
