@@ -7,7 +7,7 @@ data = [[13.0, 12.9, 12.9, 12.95, 12.9, 13.0, 12.8, 12.85, 12.95, 12.9],
 caption = lambda i: "$T_{%s}$" % i
 value = lambda x: "%ss" % x
 
-m = 5
+m = 10
 
 def avg(_list):
     return "%.2f" % (sum(_list)/float(len(_list)))
