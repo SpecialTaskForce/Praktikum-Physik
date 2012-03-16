@@ -25,19 +25,19 @@ Der Versuch der erwungenen Schwingungen verschafft einen guten \"Uberblick \"ube
 % Theorie
 %%
 \section*{Theorie}
-Periodendauer
+Die Periodendauer $T$ ist durch folgende Formel gegeben
 \begin{equation}
-T = \frac{Perioden}{Sekunden} \mbox [{s}^{-1}]
+T = \frac{Sekunden}{Perioden} \mbox [{s}]
 \end{equation}
-Alpha
+Die D\"ampfungskonstante $\alpha$ l\"asst sich durch folgende Formel absch\"atzen
 \begin{equation}
-\alpha = \frac{-T\cdot\log\left( \frac{erster Wert}{letzter Wert}\right)}{Anzahl Werte} \mbox [{whatever}]
+\alpha = \frac{\ln\left( \frac{\varphi(n_{max} \cdot T)}{\varphi(n_{min} \cdot T)}\right)}{-T\cdot (n_{max} - n_{min})} \mbox [{s}^{-1}]
 \end{equation}
-Winkelgeschwindigkeit $\omega_0$
+Die Winkelgeschwindigkeit $\omega_0$ l\"asst sich folgendermassen bestimmen
 \begin{equation}
 \omega_0 = 2\pi \cdot T \mbox[{rad \cdot s}^{-1}]
 \end{equation}
-Resonanzfrequenz
+Die Resonanzfrequenz $\omega_0$ ist gegeben durch
 \begin{equation}
 \Omega_R = \sqrt{\omega_0^2 - 2\alpha^2} \mbox [{s}^{-1}]
 \end{equation}
