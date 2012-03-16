@@ -36,23 +36,21 @@ Die D\"ampfungskonstante $\alpha$ l\"asst sich durch folgende Formel absch\"atze
 \end{equation}
 Die Winkelgeschwindigkeit $\omega_0$ l\"asst sich folgendermassen bestimmen
 \begin{equation}
-\omega_0 = 2\pi \cdot T \mbox[{rad \cdot s}^{-1}]
+\omega_0 = \frac{2\pi}{T} \mbox[{rad \cdot s}^{-1}]
 \end{equation}
 Ged\"ampfte harmonische Schwingung
 \begin{equation}\label{eq:phi}
 \varphi(t) = Ae^{-\alpha t}cos(\omega t - \beta)
 \end{equation}
 Die Resonanzfrequenz $\omega_0$ ist gegeben durch
-\begin{equation}
+\begin{equation}\label{eq:omega}
 \Omega_R = \sqrt{\omega_0^2 - 2\alpha^2} \mbox [{s}^{-1}]
 \end{equation}
 Die Resonanzkurve l\"asst sich durch folgende Formel beschreiben
-\begin{equation}
+\begin{equation}\label{eq:a}
 A(\varepsilon) = \frac{M_0}{2J\omega_0\sqrt{\varepsilon^2 + \alpha^2}}
 \end{equation}
 wobei $\varepsilon = \Omega - \omega_0$, $J$ dem Tr\"agheitsmoment und $M_0$ dem Drehmoment entspricht.
-
-\newpage
 
 %%
 % Experiment 1
@@ -61,6 +59,9 @@ wobei $\varepsilon = \Omega - \omega_0$, $J$ dem Tr\"agheitsmoment und $M_0$ dem
 
 % Aufbau und Ablauf
 \subsection*{Aufbau und Ablauf}
+\begin{center}
+\includegraphics[width=13cm]{illustration.pdf}
+\end{center}
 Die Apparatur besteht aus einer vertikal stehenden Drehscheibe mit r\"ucktreibender Spiralfeder dessen Auslenkung an einer Skala abgelesen werden kann. Zwei Drahtspulen befinden sich beidseitig der Scheibe und wirken als Wirbelstrombremse deren St\"arke durch die Stromzufuhr geregelt werden kann. Ein Motor mit kontinuierlich verstellbarer Drehfrequenz liefert ein periodisches, externes Moment indem das feste Ende der Spiralfeder bewegt wird. Die Amplitude des Pendels wird jeweils von Patricia an der eingebauten Skala abgelesen, die Frequenz des Pendels und des Motors wird bestimmt indem Simon mir einer Stoppuhr zehn Perioden misst.
 
 Beim ersten Experiment wird die Amplitude des Pendels in mehreren aufeinanderfolgenden Schwingungszyklen f\"ur verschiedene Dämpfungen gemessen. Das Pendel wurde jeweils bis zum Wert 9 auf der Skala ausgelenkt.
@@ -125,8 +126,8 @@ $A_{0}$&$A_{1}$&$A_{2}$&$A_{3}$&$A_{4}$&$A_{5}$&$A_{6}$&$A_{7}$&$A_{8}$&$A_{9}$\
 9.0&7.1&5.7&4.5&3.5&2.7&2.2&1.7&1.4&1.0\\
 \hline
 \end{tabular}
-\vspace{10pt}
 
+\newpage
 Zweite Messung
 
 \vspace{3pt}
@@ -178,10 +179,26 @@ Nach Formel \ref{eq:omega}:
 \[ ln(\varphi(nT)) = \alpha nT + C \]
 $\ln(\varphi(nT))$ ist linear, beschreibt also eine Gerade.
 
-\includegraphics[width=15cm]{plot1.pdf}
+\subsubsection*{Logarithmische Darstellung der Amplituden}
+\begin{center}
+\includegraphics[width=13cm]{plot1.pdf}
+\end{center}
 
-% Zusammenfassung
-\subsection*{Zusammenfassung}
+\subsubsection*{Verh\"altnis aufeinanderfolgender Werte}
+Nach der Annahme, dass $\varphi(t) \approx e^{-\alpha t}$ w\"urde man annehmen, dass das Verh\"altnis zweier aufeinanderfolgenden Werte konstant bleibt.
+\vspace{10pt}
+
+Ohne D\"ampfung
+\begin{center}
+\includegraphics[width=13cm]{plot11.pdf}
+\end{center}
+
+\newpage
+Mit D\"ampfung von 0.45A bzw. 0.6A
+\begin{center}
+\includegraphics[width=6cm]{plot12.pdf}
+\includegraphics[width=6cm]{plot13.pdf}
+\end{center}
 
 %%
 % Experiment 1I
@@ -197,42 +214,74 @@ Dabei hat Patricia zus\"atzlich die Geschwindigkeit des Motors geregelt.
 % Rohdaten
 \subsection*{Rohdaten}
 \subsubsection*{Ohne D\"ampfung}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+$10T$[s]&19.1&20.0&20.5&22.0&21.0&18.5&19.5\\
+\hline
+$A$&4.1&8.6&4.3&1.7&2.9&1.5&6.0\\
+\hline
+\end{tabular}
 
 \subsubsection*{Mit D\"ampfung 0.45A}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+$10T$[s]&20.5&19.0&19.5&20.0&20.2&18.2&19.1\\
+\hline
+$A$&3.5&1.5&2.9&3.5&3.6&1.2&2.5\\
+\hline
+\end{tabular}
 
 \subsubsection*{Mit D\"ampfung 0.6A}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+$10T$[s]&22.0&20.0&18.0&16.0&21.0&21.5&19.0&20.5\\
+\hline
+$A$&1.3&2.1&1.1&0.5&1.9&1.7&1.4&2.1\\
+\hline
+\end{tabular}
 
 % Auswertung
 \subsection*{Auswertung}
-Resonanzkurve
-
-% Zusammenfassung
-\subsection*{Zusammenfassung}
-blupp
+Die Werte der einzelnen Messungen werden jeweils mit einer Ann\"aherung der Formel \ref{eq:a} dargestellt.
+\subsubsection*{Ohne D\"ampfung}
+\includegraphics[width=13cm]{plot23.pdf}
+\subsubsection*{Mit D\"ampfung 0.45A}
+\includegraphics[width=13cm]{plot22.pdf}
+\subsubsection*{Mit D\"ampfung 0.6A}
+\includegraphics[width=13cm]{plot21.pdf}
 
 %%
-% Experiment 1II
+% Experiment 3
 %%
-\section*{Experiment III}
-
-% Aufbau und Ablauf
-\subsection*{Aufbau und Ablauf}
+\section*{Aufgabe III}
 Die D\"ampfungskonstante $\alpha$ soll auf zwei verschiedene Arten bestimmt werden.\\
 1. $\varphi(t) \approx e^{-\alpha t}$ \\
 2. $\frac{A_{max}}{\sqrt{2}}$\\
 
 % Auswertung
-\subsection*{Auswertung}
-blablaaa
+\subsection*{Teilaufgabe I}
+Als Steigung der Gerade wird jeweils der erste und letzte Messwert verwendet.
+\subsubsection*{Ohne D\"ampfung}
+\[ \alpha = 1.7013 \]
+\subsubsection*{Mit D\"ampfung 0.45A}
+\[ \alpha = 0.4551 \]
+\subsubsection*{Mit D\"ampfung 0.6A}
+\[ \alpha = 0.2222 \]
 
 % Zusammenfassung
-\subsection*{Zusammenfassung}
-blupp
+\subsection*{Teilaufgabe II}
+Die Werte werden direkt von den Darstellugen aus Aufgabe II abgelesen.
+\subsubsection*{Ohne D\"ampfung}
+\[ \alpha = 1.7013 \]
+\subsubsection*{Mit D\"ampfung 0.45A}
+\[ \alpha = 0.03 \]
+\subsubsection*{Mit D\"ampfung 0.6A}
+\[ \alpha = 0.04 \]
 
 %%
 % Diskussion
 %%
 \section*{Diskussion}
-
+Bei Experiment I bildeten die Amplituden wie erwartet im logarithmischen Plot eine Gerade, nur mit sehr starker D\"ampfung wichen die Werte immer weiter von der Geraden ab. Dies liegt daran, dass das Pendel bereits nach zehn Schwingungen fast komplett stillsteht ($A <$ 0.1). Das Verh\"altnis der aufeinanderfolgenden Werte war nicht wie erwartet konstant, sondern scheint exponentiell zu steigen und aufgrund der groben Skala zwischen drei Kurven hin und her zu springen. Die wird wahrscheinlich durch einige vernachl\"assigte Faktoren der Apparatur verursacht. Die Werte des zweiten Experiments beschreiben alle einigermassen eine Kurve wie man sie erwarten w\"urde, die von uns gezeichnete Kurve die wir der maximalen Amplitude und der gesch\"atzten D\"ampfungskonstante angepasst haben treffen sie allerdings nicht immer sehr genau. Die Sch\"atzung der Resonanzfrequenz stimmte in allen F\"allen relativ gut mit der Realtit\"at \"uberein. Bei der dritten Aufgabe konnte die D\"ampfungskonstante aus der Steigung der Darstellung aus Experiment I relativ gut berechnet werden, das ablesen direkt aus den Darstellungen in Experiment II ergab sehr ungenaue Werte die wir uns soweit nicht erkl\"aren k\"onnen.
 
 \end{document}
