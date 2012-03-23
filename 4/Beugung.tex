@@ -25,18 +25,18 @@
 %%
 \section*{Theorie}
 Beugungswinkel an Gitter
-\begin{equation}
+\begin{equation}\label{eq:g}
 sin\varphi = n\cdot \frac{\lambda}{g}
 \end{equation}
 
-Energie eines Photons
+Frequenz bei Elektronensprung
 \begin{equation}
-E = \frac{h\cdot c}{\lambda}
+\nu_{nm} = R\cdot \left(\frac{1}{m^2}-\frac{1}{n^2}\right)
 \end{equation}
 
-Bindungsenergie eines Elektrons im $n$-ten Orbit
+Frequenz
 \begin{equation}
-E_n = \frac{-12.6\mbox{eV}}{n^2}
+\nu = \frac{c}{\lambda}
 \end{equation}
 
 %%
@@ -46,20 +46,27 @@ E_n = \frac{-12.6\mbox{eV}}{n^2}
 
 % Aufbau und Ablauf
 \subsection*{Aufbau und Ablauf}
+\begin{center}
 \includegraphics[width=13cm]{illustration.pdf}
+\end{center}
 
 Eine Heliumlampe wird auf einer Schine direkt vor eine senkrecht zu Schiene stehende, beleuchtete Skala montiert. Etwas entfernt von der Lampe wird auf der Schiene ein optisches Gitter so montiert, dass ein Betrachter durch das Gitter die Lampe und dahinter die Skala sehen kann.
 
 Der Betrachter (Simon) sieht nun durch das Gitter auf die Skala und sollte darauf mehrere farbige Beugungslinien sehen. Um die Abstand $y$ der Linien besser bestimmen zu k\"onnen f\"ahrt ein Gehilfe (Mirco) mit der Spitze eines Kugelschreibers \"uber die Skala bis sich diese mit einer der Beugungslinien \"uberlagert, was der Betrachter bekanntgibt. Da sich die Position der Beugungslinien je nach Blickwinkel des Betrachters ver\"andern kann wird jeweils der minimale und der maximale Abstand gemessen der gerade noch sichtbar ist.
 
-Aus den gemessenen Abst\"anden $y$ kann nun die Gitterkonstante nach Formel ??? ausgerechnet werden. Zus\"astzlich wird mit einem Mikroskop das Gitter betrachtet und die Gitterkonstante durch abz\"ahlen bestimmt.
+Aus den gemessenen Abst\"anden $y$ kann nun die Gitterkonstante nach Formel \ref{eq:g} ausgerechnet werden. Zus\"astzlich wird mit einem Mikroskop das Gitter betrachtet und die Gitterkonstante durch abz\"ahlen bestimmt.
 
 % Rohdaten
 \subsection*{Rohdaten}
+\subsubsection*{Mikroskop}
+Anzahl Gitterlinien in einer Einheit des Mikroskops: 12
+
+G\"osse dieser Einheit: 0.0208mm
+
 \subsubsection*{Experiment}
 \begin{tabular}{|l|l|l|}
 \hline
-$\lambda$ [A]&$y_{min} [cm]$&$y_{max} [cm]$\\
+$\lambda$ [\AA]&$y_{min} [cm]$&$y_{max} [cm]$\\
 \hline
 7065&22.1&22.7\\
 6678&23.7&24.6\\
@@ -73,14 +80,30 @@ $\lambda$ [A]&$y_{min} [cm]$&$y_{max} [cm]$\\
 
 Abstand $d$ = 80cm
 
-\subsubsection*{Mikroskop}
-Anzahl Gitterlinien in einer Einheit des Mikroskops: 12
-
-G\"osse dieser Einheit: 0.0208mm
-
 % Auswertung
 \subsection*{Auswertung}
+\subsubsection*{Mikroskop}
+$g$ = 1.73333$\cdot 10^{-6}$
+
+\subsubsection*{Experiment}
+Die Gitterkonstante $g$ kann durch umformen der Formel \ref{eq:g} berechnet werden:
 \[ g = \frac{\lambda}{sin(tan^{-1}(\frac{y}{d}))} \]
+
+\begin{tabular}{|l|l|}
+\hline
+$\lambda$ [\AA]&g [m]\\
+\hline
+7065&$1.6582\cdot 10^{-6}$\\
+6678&$1.63083\cdot 10^{-6}$\\
+5875&$1.62617\cdot 10^{-6}$\\
+5015&$1.61411\cdot 10^{-6}$\\
+4921&$1.61692\cdot 10^{-6}$\\
+4713&$1.59976\cdot 10^{-6}$\\
+4471&$1.60069\cdot 10^{-6}$\\
+\hline
+\end{tabular}\vspace{10pt}
+
+$\overline{g} = 1.62095\cdot 10^{-6}$;
 
 %%
 % Experiment 2
@@ -107,6 +130,14 @@ $y_{max}$ = 25.4cm
 
 % Auswertung
 \subsection*{Auswertung}
+Die Wellenl\"ange der beiden Beugungsmaxima k\"onnen nach Formel \ref{eq:g} unter Verwendung der Gitterkonstante aus Experiment I bestimmt werden.\vspace{5pt}
+
+$\lambda_{rot}$ = 6722\AA
+
+$\lambda_{blau}$ = 4994\AA
+
+\vspace{5pt}
+
 
 
 %%
