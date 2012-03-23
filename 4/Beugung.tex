@@ -20,7 +20,7 @@ Bestimmung der Gitterkonstanten mit dem Mikroskop und anhand der Beugungsmaxima 
 % Motivation
 %%
 \section*{Motivation}
-Durch die Beleuchtung einse Gitters mit der Gr\"ossenordnung von $\sim$ 500 nm gelangt bei der Beugung Licht an Orte, wo es nach den Gesetzen der geometrischen Optik nicht hingelangen kann. Licht mit Strahlung verschiedener Wellenl\"angen von einer Gasentladungsr\"ohre werden in seine spektralen Komponenten aufgespalten. Die Emission der entsprechenden Lichtquanten wird bestimmten \"Uberg\"angen der Elektronen im Atrom zugeordnet.
+Durch die Beleuchtung einse Gitters mit der Gr\"ossenordnung von $\sim$ 500 nm gelangt bei der Beugung Licht an Orte, wo es nach den Gesetzen der geometrischen Optik nicht hingelangen kann. Licht mit Strahlung verschiedener Wellenl\"angen von einer Gasentladungsr\"ohre werden in seine spektralen Komponenten aufgespalten. Die Emission der entsprechenden Lichtquanten wird bestimmten \"Uberg\"angen der Elektronen im Atom zugeordnet.
 
 
 %%
@@ -33,13 +33,13 @@ sin\varphi = n\cdot \frac{\lambda}{g}
 \end{equation}
 
 Die Frequenz beim Elektronensprung l\"asst sich folgendermassen bestimmen
-\begin{equation}
-\nu_{nm} = R\cdot \left(\frac{1}{m^2}-\frac{1}{n^2}\right) \mbox [{s}^{-1}]
+\begin{equation}\label{eq:e}
+\nu_{nm} = R\cdot \left(\frac{1}{m^2}-\frac{1}{n^2}\right) [\mbox{Hz}]
 \end{equation}
 
 Die Frequenz ist gegeben durch 
-\begin{equation}
-\nu = \frac{c}{\lambda} \mbox [{s}^{-1}]
+\begin{equation}\label{eq:f}
+\nu = \frac{c}{\lambda} [\mbox{Hz}]
 \end{equation}
 
 %%
@@ -53,9 +53,9 @@ Die Frequenz ist gegeben durch
 \includegraphics[width=13cm]{illustration.pdf}
 \end{center}
 
-Eine Heliumlampe wird auf einer Schine direkt vor eine senkrecht zu Schiene stehende, beleuchtete Skala montiert. Etwas entfernt von der Lampe wird auf der Schiene ein optisches Gitter so montiert, dass ein Betrachter durch das Gitter die Lampe und dahinter die Skala sehen kann.
+Eine Heliumlampe wird auf einer Schiene direkt vor eine senkrecht zu Schiene stehende, beleuchtete Skala montiert. Etwas entfernt von der Lampe wird auf der Schiene ein optisches Gitter so montiert, dass ein Betrachter durch das Gitter die Lampe und dahinter die Skala sehen kann.
 
-Der Betrachter (Simon) sieht nun durch das Gitter auf die Skala und sollte darauf mehrere farbige Beugungslinien sehen. Um die Abstand $y$ der Linien besser bestimmen zu k\"onnen f\"ahrt ein Gehilfe (Mirco) mit der Spitze eines Kugelschreibers \"uber die Skala bis sich diese mit einer der Beugungslinien \"uberlagert, was der Betrachter bekanntgibt. Da sich die Position der Beugungslinien je nach Blickwinkel des Betrachters ver\"andern kann wird jeweils der minimale und der maximale Abstand gemessen der gerade noch sichtbar ist.
+Der Betrachter (Simon) sieht nun durch das Gitter auf die Skala und sollte darauf mehrere farbige Beugungslinien sehen. Um die Abstand $y$ der Linien besser bestimmen zu k\"onnen f\"ahrt ein Gehilfe (Mirco) mit der Spitze eines Kugelschreibers \"uber die Skala bis sich diese mit einer der Beugungslinien \"uberlagert, was der Betrachter bekannt gibt. Da sich die Position der Beugungslinien je nach Blickwinkel des Betrachters ver\"andern kann wird jeweils der minimale und der maximale Abstand gemessen der gerade noch sichtbar ist.
 
 Aus den gemessenen Abst\"anden $y$ kann nun die Gitterkonstante nach Formel \ref{eq:g} ausgerechnet werden. Zus\"astzlich wird mit einem Mikroskop das Gitter betrachtet und die Gitterkonstante durch abz\"ahlen bestimmt.
 
@@ -64,7 +64,7 @@ Aus den gemessenen Abst\"anden $y$ kann nun die Gitterkonstante nach Formel \ref
 \subsubsection*{Mikroskop}
 Anzahl Gitterlinien in einer Einheit des Mikroskops: 12
 
-G\"osse dieser Einheit: 0.0208mm
+Gr\"osse dieser Einheit: 0.0208mm
 
 \subsubsection*{Experiment}
 \begin{tabular}{|l|l|l|}
@@ -81,7 +81,7 @@ $\lambda$ [\AA]&$y_{min} [cm]$&$y_{max} [cm]$\\
 \hline
 \end{tabular}\vspace{10pt}
 
-Abstand $d$ = 80cm
+Abstand $d$ = (80 $\pm$ 0.05)cm
 
 % Auswertung
 \subsection*{Auswertung}
@@ -106,7 +106,9 @@ $\lambda$ [\AA]&g [m]\\
 \hline
 \end{tabular}\vspace{10pt}
 
-$\overline{g} = 1.62095\cdot 10^{-6}$;
+Ausgehend von einem Fehler $s_y$ von 0.1cm:.\vspace{5pt}
+
+$\overline{g} = (1.6210\cdot 10^{-6} \pm 0.0009\cdot 10^{-6})$m
 
 %%
 % Experiment 2
@@ -122,25 +124,36 @@ Aus den beiden Abst\"anden $y$ wird die Wellenl\"ange der jeweiligen Farbe der B
 % Rohdaten
 \subsection*{Rohdaten}
 \subsubsection*{Rot}
-$y_{min}$ = 34.6cm
+$y_{min}$ = (34.6 $\pm$ 0.1)cm
 
-$y_{max}$ = 35.4cm
+$y_{max}$ = (35.4 $\pm$ 0.1)cm
 
 \subsubsection*{Blau}
-$y_{min}$ = 24.5cm
+$y_{min}$ = (24.5 $\pm$ 0.1)cm
 
-$y_{max}$ = 25.4cm
+$y_{max}$ = (25.4 $\pm$ 0.1)cm
 
 % Auswertung
 \subsection*{Auswertung}
 Die Wellenl\"ange der beiden Beugungsmaxima k\"onnen nach Formel \ref{eq:g} unter Verwendung der Gitterkonstante aus Experiment I bestimmt werden.\vspace{5pt}
 
-$\lambda_{rot}$ = 6722\AA
+$\lambda_{rot}$ = (6722 $\pm$ 158)\AA
 
-$\lambda_{blau}$ = 4994\AA
+$\lambda_{blau}$ = (4994 $\pm$ 158)\AA
 
 \vspace{5pt}
+Die jeweiligen Frequenzen k\"onnen durch Formel \ref{eq:f} berechnet werden:\vspace{5pt}
 
+$\nu_{rot}$ = (4.44788$\cdot 10^{14} \pm 9.486 \cdot 10^6$)Hz
+
+$\nu_{blau}$ = (5.9879$\cdot 10^{14} \pm 9.486 \cdot 10^6$)Hz
+
+\vspace{5pt}
+Nach Formel \ref{eq:e} entsprechen die beiden Frequenzen ungef\"ahr den ersten beiden Spr\"ungen der Balmer-Serie:\vspace{5pt}
+
+$\nu_{23} = 4.5667\cdot 10^{14}$Hz $\approx\nu_{rot}$
+
+$\nu_{24} = 6.165\cdot 10^{14}$Hz $\approx\nu_{blau}$
 
 
 %%
