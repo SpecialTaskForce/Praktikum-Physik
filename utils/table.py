@@ -1,15 +1,14 @@
-data =  [[7065, 22.1, 22.7],
- [6678, 23.7, 24.6],
- [5875, 25.1, 25.7],
- [5015, 25.8, 26.5],
- [4921, 30.7, 31.7],
- [4713, 36.1, 37.4],
- [4471, 38.7, 40.0]]
+data = [[1.01, 0.61, 0.84, 1.23],
+        ["5.5\cdot 10^{-7}", "8.33333\cdot 10^{-8}", "2.875\cdot 10^{-7}", "1.08333\cdot 10^{-6}"],
+        ["6.02818\cdot 10^{-7}", "8.02084\cdot 10^{-8}", "2.88415\cdot 10^{-7}", "1.32593\cdot 10^{-6}"],
+        ["5.39329\cdot 10^{-7}", "7.88514\cdot 10^{-8}", "2.72238\cdot 10^{-7}", "1.07411\cdot 10^{-6}"]]
+
+data = [[x[i] for x in data] for i in range(len(data[0]))]
 
 
 m = len(data[0])
 
-caption = "$\\lambda$ [A]&$y_{min} [cm]$&$y_{max} [cm]$"
+caption = "$h$ [cm]&$Q$ [m$^3$s$^{-1}$&$Q_H$ [m$^3$s$^{-1}$&$Q_E$ [m$^3$s$^{-1}$]"
 
 print "\\begin{tabular}{|" + "l|"*m + "}"
 print "\\hline"
@@ -17,7 +16,7 @@ print caption + "\\\\"
 print "\\hline"
 
 for row in data:
-    print "&".join([str(x) for x in row]) + "\\\\"
+    print "&".join(["$"+str(x)+"$" for x in row]) + "\\\\"
 
 
 print "\\hline"
