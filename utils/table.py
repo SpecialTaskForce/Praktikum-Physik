@@ -1,22 +1,23 @@
-data = [[1.01, 0.61, 0.84, 1.23],
-        ["5.5\cdot 10^{-7}", "8.33333\cdot 10^{-8}", "2.875\cdot 10^{-7}", "1.08333\cdot 10^{-6}"],
-        ["6.02818\cdot 10^{-7}", "8.02084\cdot 10^{-8}", "2.88415\cdot 10^{-7}", "1.32593\cdot 10^{-6}"],
-        ["5.39329\cdot 10^{-7}", "7.88514\cdot 10^{-8}", "2.72238\cdot 10^{-7}", "1.07411\cdot 10^{-6}"]]
+data = [[19.98, 40.7, 60.9, 79.3, 99.7, 88.8, 92.7, 89.0,  89.9, 90.4, 91.2],[1.97, 4.09, 6.09, 7.92, 9.95, 4.34, 13747,  28943, 40260, 49030, \
+56750]]
 
 data = [[x[i] for x in data] for i in range(len(data[0]))]
 
-
+c = 3
 m = len(data[0])
+n = len(data)
 
-caption = "$h$ [cm]&$Q$ [m$^3$s$^{-1}$&$Q_H$ [m$^3$s$^{-1}$&$Q_E$ [m$^3$s$^{-1}$]"
+caption = "$U$ [V]&$I [\\mu $A]"
 
-print "\\begin{tabular}{|" + "l|"*m + "}"
+print "\\begin{tabular}{|" + "r|"*m*c + "}"
 print "\\hline"
-print caption + "\\\\"
+print "&".join([caption]*c) + "\\\\"
 print "\\hline"
 
-for row in data:
-    print "&".join(["$"+str(x)+"$" for x in row]) + "\\\\"
+rows = (n+c-1)/c
+
+for i in range(rows):
+    print "&".join("&".join([str(x) for x in row]) for row in data[i::rows]) + "\\\\"
 
 
 print "\\hline"
