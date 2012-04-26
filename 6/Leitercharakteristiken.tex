@@ -57,12 +57,53 @@
 \subsection*{Diskussion}
 
 \newpage
-\subsection*{Theorieaufgaben}
+\section*{Theorieaufgaben}
 
-\subsubsection*{Aufgabe 2}
+\subsection*{Aufgabe 2}
+\subsubsection*{Knotenregel}
+Die Summe der zu- und wegfliessenden Str\"omen in einem Knoten ist Null, d.h.
+\[ \sum_kl_k = 0 \]
+Die Knotenregel folgt aus der Ladungserhaltung.
 
-\subsubsection*{Aufgabe 3}
+\subsubsection*{Maschenregel}
+Die Summe aller Spannungsabf\"alle an den einzelnen Elementen, aus denen eine Masche besteht, ist Null, d.h.
+\[ \sum_kU_k = 0\]
+Die Maschenregel folgt aus der Energieerhaltung.
 
-\subsubsection*{Aufgabe 5}
+\subsection*{Aufgabe 3}
+\begin{eqnarray*}
+R & = & \frac{38}{g} k\Omega \\
+I & = & \frac{U}{R} = \frac{9}{38000} \cdot U_0
+\end{eqnarray*}
+
+Aus der Knotenregel
+\begin{eqnarray*}
+I_5 & = & I_{23} + I_4 \hspace{20pt} ( I_{23} = I_2 = I_3 ) \\
+I_1 & = & I_3 + I_4 \hspace{20pt} ( I = I_1 = I_5 )
+\end{eqnarray*}
+folgt:
+\begin{eqnarray*}
+U_5 & = & I \cdot R_5 = \frac{9}{38000} \cdot U_0 \cdot 10^3 = \frac{9}{38} \cdot U_0 = I \cdot R_1 = U_1 \\
+I_{23} & = & \frac{U_5}{R_{23}} = \frac{9}{38} \cdot U_0 \cdot \frac{1}{5000} = I_2 = I_3 \\
+\Rightarrow & U_2 & = R_2 \cdot I_2 = \frac{9}{38} \cdot \frac{2000}{5000} \cdot U_0 = \frac{9}{95} \cdot U_0 \\
+& U_3 & = R_3 \cdot I_3 = \frac{9}{38} \cdot \frac{3000}{5000} \cdot U_0 = \frac{27}{190} \cdot U_0 \\
+I_4 & = & \frac{U_5}{R_4} \\
+U_4 & = & I_4 \cdot R_4 = \frac{U_5}{R_4} = U_5 = \frac{9}{38} \cdot U_0
+\end{eqnarray*}
+\"Uberpr\"ufung:
+\[ \sum_{i=1}^5 U_i = 3 \cdot \frac{9}{38} \cdot U_0 + \frac{9}{95} \cdot U_0 = U_0 \]
+
+\subsection*{Aufgabe 5}
+$R_i = 1\Omega$, Messbereich 0-1A, gew\"unschter Bereich 0-10A
+\begin{eqnarray*}
+I_n & = & 10 - 1 = 9\mbox{A (Strom durch den Nebenwiederstand)} \\
+R_n & = & \frac{U_max}{I_n} = \frac{1}{9}  \Omega
+\end{eqnarray*}
+$R_n$ muss parallel geschaltet werden.
+\begin{eqnarray*}
+R_{Ges} & = & \left( \frac{1}{R_i} + \frac{1}{R_n} \right) ^{-1} = \frac{1}{10}\Omega \\
+R_{Ges} \cdot I & = & U_{max} \\
+\frac{1}{10} \cdot 10 & = & 1 \mbox{V}
+\end{eqnarray*}
 
 \end{document}
