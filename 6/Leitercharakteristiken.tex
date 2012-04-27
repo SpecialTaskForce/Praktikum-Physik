@@ -41,6 +41,10 @@ Um die Kennlinie verschiedener Elemente zu bestimmen werden diese gem\"ass dem S
 
 
 \subsection*{Rohdaten}
+$s_U$ = 0.07V
+
+\noindent
+$s_I$ = 0.01$\mu$A
 
 \subsubsection*{Drahtwiderstand 15$k\Omega$}
 \begin{tabular}{|r|r|r|r|r|r|}
@@ -98,7 +102,7 @@ $U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]\\
 \hline
 -19.65&-1.95&-139.1&-13.94&0.771&206500\\
 -40.4&-4.06&-161.0&-16.12&0.749&119400\\
-git push-59.2&-5.94&-180.7&-18.0&0.694&31000\\
+-59.2&-5.94&-180.7&-18.0&0.694&31000\\
 -81.0&-8.12&-200.3&-20.09&0.635&7700\\
 -99.8&-10.01&-221.2&-22.15&&\\
 -120.2&-12.01&-2339.5&-23.98&&\\
@@ -133,25 +137,28 @@ $U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]\\
 \end{tabular}
 
 \subsection*{Auswertung}
-Die Fehlerbalken wurden weggelassen da sie kleiner als die Messpunkte selbst währen.
+Die Fehlerbalken wurden weggelassen da sie kleiner als die Messpunkte selbst w\"ahren.
 
 \subsubsection*{Drahtwiederstand}
-\includegraphics[width=15cm]{draht.pdf}
+\includegraphics[width=14cm]{draht.pdf}
+Mit linearer Interpolation.
 
 \subsubsection*{Metallfadenlampe}
-\includegraphics[width=15cm]{metallfadenlampe.pdf}
+\includegraphics[width=14cm]{metallfadenlampe.pdf}
+Mit kubischer Interpolation.
 
 \subsubsection*{Kohlenfadenlampe}
-\includegraphics[width=15cm]{kohlenfadenlampe.pdf}
+\includegraphics[width=14cm]{kohlenfadenlampe.pdf}
+Mit kubischer Interpolation.
 
 \subsubsection*{Silizium-Diode}
-\includegraphics[width=15cm]{siliziumdiode.pdf}
+\includegraphics[width=14cm]{siliziumdiode.pdf}
 
 \subsubsection*{Zenerdiode}
-\includegraphics[width=15cm]{zenerdiode.pdf}
+\includegraphics[width=14cm]{zenerdiode.pdf}
 
 \subsubsection*{Glimmstabilisator}
-\includegraphics[width=15cm]{glimmstabilisator.pdf}
+\includegraphics[width=14cm]{glimmstabilisator.pdf}
 
 
 \subsection*{Diskussion}
