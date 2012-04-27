@@ -42,7 +42,7 @@ Um die Kennlinie verschiedener Elemente zu bestimmen werden diese gem\"ass dem S
 
 \subsection*{Rohdaten}
 
-\subsubsection*{Drahtwiederstand}
+\subsubsection*{Drahtwiderstand 15$k\Omega$}
 \begin{tabular}{|r|r|r|r|r|r|}
 \hline
 $U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]\\
@@ -59,7 +59,7 @@ $U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]\\
 \hline
 \end{tabular}
 
-\subsubsection*{Metallfadenlampe}
+\subsubsection*{Metallfadenlampe 10$W$}
 \begin{tabular}{|r|r|r|r|r|r|}
 \hline
 $U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]\\
@@ -75,7 +75,7 @@ $U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]\\
 \hline
 \end{tabular}
 
-\subsubsection*{Kohlenfadenlampe}
+\subsubsection*{Kohlenfadenlampe 35$W$}
 \begin{tabular}{|r|r|r|r|r|r|}
 \hline
 $U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]\\
@@ -91,7 +91,7 @@ $U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]\\
 \hline
 \end{tabular}
 
-\subsubsection*{Silizium-Diode}
+\subsubsection*{Silizium-Diode max 400$V$}
 \begin{tabular}{|r|r|r|r|r|r|}
 \hline
 $U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]\\
@@ -120,7 +120,7 @@ $U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]\\
 \hline
 \end{tabular}
 
-\subsubsection*{Glimmstabilisator}
+\subsubsection*{Glimmstabilisato 87$V$ max 60$mA$}
 \begin{tabular}{|r|r|r|r|r|r|}
 \hline
 $U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]\\
@@ -156,13 +156,16 @@ Die Fehlerbalken wurden weggelassen da sie kleiner als die Messpunkte selbst wä
 
 \subsection*{Diskussion}
 Der Drahtwiderstand geh\"ort zu den ohmschen Widerst\"anden. Die Metallfadenlampe ist ein Metallleiter.
-Als Halbleiter bezeichnet man die Kohlenfadenlampe, die Siliziumdiode, die Zenerdiode und den Glimmstabilisator. Die Fehlerbalken sind kleiner als die Punkte und sind deshalb nicht sichtbar.
+Als Halbleiter bezeichnet man die Kohlenfadenlampe, die Siliziumdiode, die Zenerdiode und den Glimmstabilisator.
 
-Die Kennlinie wird immer steiler, je kleiner der Widerstand ist. Das ohmsche Gesetz sagt, dass $\frac{1}{R}$ die Steigung der Kennlinie ist. Wenn der Widerstand gegen $0$ geht, so wird die Steigung $\infty$. Deshalb ist die Kennlinie f\"ur einen idealen Leiter senkrecht.
+Die Silizium-Diode und die Zenerdiode funktioniert nur in eine Richtung, deshalb sind die Messpunkte in Sperrrichutung jeweils nahe bei $0$.
+
+Beim Glimmstabilisator ist die Kennlinie solange linear bis er gl\"uht. Danach wird die Spannung nicht mehr h\"oher als die vorgesehenen 87$V$.
 
 \subsection*{Aufgabe 3}
 \includegraphics[width=15cm]{ohm.pdf}
 
+Die Kennlinie wird immer steiler, je kleiner der Widerstand ist. Das ohmsche Gesetz sagt, dass $\frac{1}{R}$ die Steigung der Kennlinie ist. Wenn der Widerstand gegen $0$ geht, so wird die Steigung $\infty$. Deshalb ist die Kennlinie f\"ur einen idealen Leiter senkrecht.
 
 \newpage
 \section*{Theorieaufgaben}
