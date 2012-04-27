@@ -18,7 +18,10 @@ Kennlinien verschiedener Elementen aufnehmen und auf Abweichungen vom ohmschen G
 Der Versuch der Leitercharakteristiken eignet sich gut als Einstieg in die Elektronik. Dabei wird das Verhalten von h\"aufig verwendeten Bauteile (Metalle, Halbleiter) in einem Stromkreis untersucht und deren jeweiligen charakteristischen Eigenschaften analysiert. Durch die herausragende Bedeutung der Halbleiter in der Elektronik werden sie in diesem Versuch besonders ber\"ucksichtigt.
 
 \section*{Theorie}
-
+Ohmsches Gesetz
+\begin{equation}
+U=R\cdot I
+\end{equation}
 
 \section*{Experiment}
 
@@ -75,7 +78,7 @@ $U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]\\
 39.9&28.645&202.2&198.95&-99.5&-82.34\\
 59.3&44.95&210.2&209.06&-80.4&-63.95\\
 80.4&63.97&-210.4&-203.9&-60.9&-46.00\\
-99.0&81.97&-199.5&-195.51&-40.4&31.00\\
+99.0&81.97&-199.5&-195.51&-40.4&-31.00\\
 119.8&103.2&-179.8&-171.05&-20.25&-29.06\\
 140.0&124.88&-160.8&-148.5&&\\
 159.5&147.05&-139.5&-124.31&&\\
@@ -146,7 +149,7 @@ $U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]&$U$ [V]&$I [\mu $A]\\
 \subsection*{Aufgabe 2}
 \subsubsection*{Knotenregel}
 Die Summe der zu- und wegfliessenden Str\"omen in einem Knoten ist Null, d.h.
-\[ \sum_kl_k = 0 \]
+\[ \sum_kI_k = 0 \]
 Die Knotenregel folgt aus der Ladungserhaltung.
 
 \subsubsection*{Maschenregel}
@@ -155,6 +158,10 @@ Die Summe aller Spannungsabf\"alle an den einzelnen Elementen, aus denen eine Ma
 Die Maschenregel folgt aus der Energieerhaltung.
 
 \subsection*{Aufgabe 3}
+\begin{wrapfigure}{r}{8cm}
+\centering
+\includegraphics[width=6cm]{exercise3.pdf}
+\end{wrapfigure}
 \begin{eqnarray*}
 R & = & \frac{38}{g} k\Omega \\
 I & = & \frac{U}{R} = \frac{9}{38000} \cdot U_0
@@ -181,7 +188,7 @@ U_4 & = & I_4 \cdot R_4 = \frac{U_5}{R_4} = U_5 = \frac{9}{38} \cdot U_0
 $R_i = 1\Omega$, Messbereich 0-1A, gew\"unschter Bereich 0-10A
 \begin{eqnarray*}
 I_n & = & 10 - 1 = 9\mbox{A (Strom durch den Nebenwiederstand)} \\
-R_n & = & \frac{U_max}{I_n} = \frac{1}{9}  \Omega
+R_n & = & \frac{U_{max}}{I_n} = \frac{1}{9}  \Omega
 \end{eqnarray*}
 $R_n$ muss parallel geschaltet werden.
 \begin{eqnarray*}
