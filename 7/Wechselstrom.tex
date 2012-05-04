@@ -84,7 +84,31 @@ $990\cdot 10^{3} \pm 8000$&$2.72 \pm 0.02$&$163\cdot 10^{-3} \pm 10^{-3}$\\
 \end{tabular}
 
 \subsection*{Auswertung}
-TODO
+$Z$ wird nach Formel (1) und (2) berechnet:
+\[Z = \left| \frac{U_E}{U_A} \right| \frac{1}{2\pi f C} \]
+Verglichen wird mit dem entsprechenden theoretischen Wert nach (3) und (1):
+\[ Z =  \frac{\sqrt{1+(2\pi f R C)^2}}{2\pi f C} \]
+
+\begin{tabular}{|r|r|}
+\hline
+$f$ [Hz]&$Z$ [$\Omega$]\\
+\hline
+23.5&0.679\\
+58.7&0.265\\
+296&0.099\\
+607&0.068\\
+3425&0.034\\
+7215&0.0163\\
+36640&0.090\\
+58240&0.283\\
+177800&1.519\\
+217900&1.697\\
+\hline
+\end{tabular}
+\vspace{10pt}
+
+\includegraphics[width=14cm]{graph3.pdf}
+Die $f$-Achse ist logarithmisch, Fehlerbalken w\"aren zu klein und darum nicht dargestellt.
 
 \subsection*{Diskussion}
 Am Anfang stimmt die Messung mit der Theorie gut \"uberein. Aber bei hohen Frequenzen sollte die Impedanz nur noch vom Widerstand R abh\"angen. Das ist aber bei unseren Messungen nicht der Fall. Wir k\"onnen uns nicht erkl\"aren, warum die gemessenen Werte bis zu 100000 $\Omega$ vom theoretischen Wert abweicht.
@@ -95,12 +119,12 @@ Am Anfang stimmt die Messung mit der Theorie gut \"uberein. Aber bei hohen Frequ
 \includegraphics[height=5cm]{illustration4.pdf}
 
 \noindent
-In die Schaltung aus Aufgabe 3 wird gem\"ass Schaltschema ein Differenz-verst\"arker eingebaut. F\"ur mehrere Frequenzen $f$ wird die Phasenverschiebung $\varphi$ gemessen.
+In die Schaltung aus Aufgabe 3 wird gem\"ass Schaltschema ein Differenzverst\"arker eingebaut. F\"ur mehrere Frequenzen $f$ wird die Phasenverschiebung $\Delta T$ gemessen.
 
 \subsection*{Rohdaten}
 \begin{tabular}{|r|r|}
 \hline
-$f$ [Hz]&$\varphi$ [s]\\
+$f$ [Hz]&$\Delta T$ [s]\\
 \hline
 $58.7 \pm 0.07$&$720\cdot 10^{-6} \pm 50\cdot 10^{-6}$\\
 $23.50 \pm 0.03$&$4.6\cdot 10^{-3} \pm 0.1\cdot 10^{-3}$\\
@@ -116,7 +140,10 @@ $217.9\cdot 10^{3} \pm 500$&$1.24\cdot 10^{-6} \pm 0$\\
 \end{tabular}
 
 \subsection*{Auswertung}
-TODO
+Die Phasenverschiebung wird nach Formel (4) berechnet und mit dem theoretischen Wert verglichen:
+\[ \varphi = arctan\left( \frac{1}{2 \pi f R C} \right) \]
+\includegraphics[width=14cm]{graph4.pdf}
+Beide Achsen sind logarithmisch, Fehlerbalken w\"aren zu klein und darum nicht dargestellt. 
 
 \subsection*{Diskussion}
 Am Anfang stimmen die Werte gut mit der Theorie \"uberein, aber die letzten 4 Werte weichen sehr stark ab. Wir k\"onnen uns nicht erkl\"aren, warum diese pl\"otzlich wieder nach oben gehen bzw. die Phasenverschiebung wieder gr\"osser wird.
