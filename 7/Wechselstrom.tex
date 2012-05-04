@@ -27,13 +27,24 @@ Viele Anwedungen beruhen auf den besonderen Eigenschaften des Wechselstroms, ins
 \omega = 2\pi f
 \end{equation}
 
+\begin{equation}
+|Z_{RC}| = \left| \frac{U_E}{U_A} \right| \cdot |Z_C| = \left| \frac{U_E}{U_A} \right| \frac{1}{\omega C}
+\end{equation}
+
+\begin{equation}
+\left| \frac{U_A}{U_E} \right|= \left| \frac{\frac{1}{j\omega C}}{R + \frac{1}{j\omega C}}\right| = \frac{1}{\sqrt{1+(\omega RC)^2}}
+\end{equation}
+
+\begin{equation}
+tan(\varphi) = \frac{1}{\omega R C}
+\end{equation}
 
 \section*{Aufgabe I}
 \begin{eqnarray*}
-Z_L & = & i \omega L \\
+Z_L & = & j \omega L \\
 Z_R & = & R \\
-Z_{Total} & = & \left( \frac{1}{i \omega L} + \frac{1}{R} \right) ^{-1} \\
-& = & \frac{i \omega L R}{R + i \omega L}
+Z_{Total} & = & \left( \frac{1}{j \omega L} + \frac{1}{R} \right) ^{-1} \\
+& = & \frac{j \omega L R}{R + j \omega L}
 \end{eqnarray*}
 
 
@@ -41,13 +52,18 @@ Z_{Total} & = & \left( \frac{1}{i \omega L} + \frac{1}{R} \right) ^{-1} \\
 \subsection*{Aufbau und Ablauf}
 \includegraphics[height=5cm]{illustration2.pdf}
 
+Das Oszilloskop wird direkt an den Frequenzgenerator angeschlossen.
+
 \subsection*{Diskussion}
-TODO
+TODO (Mirco)
 
 
 \section*{Aufgabe III}
 \subsection*{Aufbau und Ablauf}
 \includegraphics[height=5cm]{illustration3.pdf}
+
+\noindent
+Ein RC-Schaltung wird gem\"ass Schaltschema aufgebaut und das Oszilloskop sowohl \"uber dem Widerstand wie auch dem Frequenzgenerator angeschlossen. F\"ur verschiedene Frequenzen $f$ wurden die Spannungsamptlituden $U_E$ und $U_A$ bestimmt.
 
 \subsection*{Rohdaten} 
 \begin{tabular}{|r|r|r|}
@@ -57,10 +73,10 @@ $f$ [Hz]&$U_E$ [V]&$U_A$ [V]\\
 $137.0 \pm 0.5$&$3.50 \pm 0.1$&$461\cdot 10^{-3} \pm 10^{-3}$\\
 $733 \pm 1$&$3.40 \pm 0$&$196\cdot 10^{-3} \pm 0$\\
 $35.46 \pm 0.03$&$3.41 \pm 0.01$&$1.42 \pm 0.01$\\
-$4.080\cdot 10^{3} \pm 5$&$3.40 \pm 0.01$&$184\cdot 10^{-3} \pm 2\cdot 10^{}$\\
+$4.080\cdot 10^{3} \pm 5$&$3.40 \pm 0.01$&$180\cdot 10^{-3} \pm 2\cdot 10^{-3}$\\
 $4.120\cdot 10^{3} \pm 500$&$3.40 \pm 0.01$&$184\cdot 10^{-3} \pm 10^{-3}$\\
 $480.0\cdot 10^{3} \pm 1000$&$3.20 \pm 0.01$&$177\cdot 10^{-3} \pm 10^{-3}$\\
-$990\cdot 10^{3} \pm 8000$&$2.72 \pm 0.02$&$1633\cdot 10^{-3} \pm 10^{-3}$\\
+$990\cdot 10^{3} \pm 8000$&$2.72 \pm 0.02$&$163\cdot 10^{-3} \pm 10^{-3}$\\
 \hline
 \end{tabular}
 
@@ -74,6 +90,9 @@ TODO (Mirco)
 \section*{Aufgabe IV}
 \subsection*{Aufbau und Ablauf}
 \includegraphics[height=5cm]{illustration4.pdf}
+
+\noindent
+In die Schaltung aus Aufgabe 3 wied gem\"ass Schaltschema ein Differenzverst\"arker eingebaut. F\"ur mehrere Frequenzen $f$ wird die Phasenverschiebung $\varphi$ gemessen.
 
 \subsection*{Rohdaten}
 \begin{tabular}{|r|r|}
