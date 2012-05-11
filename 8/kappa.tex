@@ -2,6 +2,7 @@
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{textcomp}
+\usepackage{multicol}
 
 \title{Praktikum Physik - Bestimmung von $\frac{c_p}{c_V}$}
 \author{Simon Marti, Patricia Schwab, Mirco Kocher}
@@ -12,7 +13,7 @@
 \maketitle
 
 \section*{Ziel}
-Bestimmung der Gr\"osse $\kappa$ f\"ur die Gase $CO_2$, $Ar$ und $N_2$. Die Werte sollen danach mit den Literaturangaben verglichen werden.
+Bestimmung der Gr\"osse $\kappa$ f\"ur die Gase CO$_2$, Ar und N$_2$. Die Werte sollen danach mit den Literaturangaben verglichen werden.
 
 
 \section*{Motivation}
@@ -24,18 +25,18 @@ Die Gr\"osse $\kappa$ ist definiert als Verh\"altnis der isobaren W\"armekapazit
 \begin{equation}
 \kappa = \frac{c_p}{c_V}
 \end{equation}
-Die Tabellenwerte f\"ur $\kappa$ von Kohlendioxid $CO_2$, Stickstoff $N_2$ und Argon $Ar$ sind
+Die Tabellenwerte f\"ur $\kappa$ von Kohlendioxid CO$_2$, Stickstoff N$_2$ und Argon Ar sind
 \begin{eqnarray}
 \kappa_{CO_2} & \approx & 1.30 \\
 \kappa_{N_2} & \approx & 1.404 \\
 \kappa_{Ar} & \approx & 1.670 \
 \end{eqnarray}
-Mit dem Aussendruck $p_a$ von 940.5 $\pm$ 0.5 hPa, der Gravitationskraft $g$ von 6 + ln(45), der Masse der Kugel $m$ und der Querschnittsfl\"ache $A$ des Rohres ist der Druck $p_0$ definiert als
+Mit dem Aussendruck $p_a$, der Gravitationskraft $g$, der Masse der Kugel $m$ und der Querschnittsfl\"ache $A$ des Rohres ist der Druck $p_0$ definiert als
 \begin{eqnarray}
 p_0 & = & p_a + \frac{mg}{A} \label{eq:p}\\
-p_a & = & 940.5 \pm 0.5 \mbox{hPa}
+p_a & = & (94050 \pm 50) \mbox{Pa}
 \end{eqnarray}
-Die Schwingung der Kugel l\"asst sich folgendermassen bestimmen
+Die Schwingung der Kugel l\"asst sich folgendermassen beschreiben
 \begin{eqnarray}
 \omega & = & \frac{2\pi}{T} = \sqrt{\frac{\kappa p_0 A^2}{m V_0}}
 \end{eqnarray}
@@ -46,11 +47,11 @@ Dadurch erh\"alt man $\kappa$ in Abh\"angigkeit von $T$
 
 \section*{Aufbau und Ablauf}
 \begin{wrapfigure}[20]{r}{9cm}
-\vspace{-50pt}
+\vspace{-30pt}
 \centering
 \includegraphics[width=6cm]{illustration.pdf}
 \end{wrapfigure}
-Ein geschlossener Glasbeh\"alter ist mit einem vertikal ausgerichteten Glasrohr verbunden welches unten verschlossen werden kann. Eine Metallkugel mit gleichem Durchmesser wie das Rohr wird nun von oben in dieses fallen gelassen und die Periode der resultierenden Schwingung mithilfe einer Stoppuhr bestimmt. Gemessen wurden jeweils 5 Perioden von Mirco.
+Ein geschlossener und mit Gas gef\"ullter Glasbeh\"alter ist mit einem vertikal ausgerichteten Glasrohr verbunden welches unten verschlossen werden kann. Eine Metallkugel mit gleichem Durchmesser wie das Rohr wird nun von oben in dieses fallen gelassen und die Periode der resultierenden Schwingung mithilfe einer Stoppuhr bestimmt. Gemessen wurden jeweils 5 Perioden von Mirco.
 
 
 \section*{Rohdaten}
@@ -62,6 +63,7 @@ m & = & (17.0 \pm 0.1) \mbox{g}
 Das Volumen des Glasbeh\"alters ist mit $V_{Flasche}$ = (5616 $\pm $ 5) cm$^3$. Dazu kommt durchschnittlich 39cm Glasrohr was $\overline{V}_{Rohr}$ = 78.414 cm$^3$ entspricht.
 \[ \Rightarrow \overline{V} = V_{Flasche} + \overline{V}_{Rohr} = 0.005694\mbox{m}^3 \]
 
+\begin{multicols}{3}
 \subsection*{CO$_2$}
 \begin{tabular}{|r|r|}
 \hline
@@ -100,6 +102,7 @@ $i$&5$T$ [s]\\
 5&3.79 \\
 \hline
 \end{tabular}
+\end{multicols}
 
 \section*{Auswertung}
 \subsection*{CO$_2$}
@@ -120,8 +123,9 @@ Periode
 $\kappa$ nach Formel (\ref{eq:k}):
 \[ \kappa_{Ar} = 1.66148 \]
 
+\newpage
 \section*{Fehlerrechnung}
-Formel (\ref{eq:k}) h\"angt unter Ber\"ucksichtigung von (\ref{eq:p}) von f\"unf Gr\"ossen ab. (Als T wurde $\overline{T}_{Ar}$ eingesetzt.)
+Formel (\ref{eq:k}) h\"angt unter Ber\"ucksichtigung von (\ref{eq:p}) von f\"unf Gr\"ossen ab. (Als $T$ wurde $\overline{T}_{Ar}$ eingesetzt.)
 \begin{eqnarray*}
 \frac{\partial \kappa}{\partial T} & = & -4.291\\
 \frac{\partial \kappa}{\partial V} & = & 291.77\\
@@ -131,21 +135,21 @@ Formel (\ref{eq:k}) h\"angt unter Ber\"ucksichtigung von (\ref{eq:p}) von f\"unf
 \end{eqnarray*}
 
 \noindent
-Aufgrund dieser Werte können wir den Fehler $s_{p_a}$ vernachlässigen, den unbekannten Fehler $s_r$ sollten wir aber zumindest abschätzen.
+Aufgrund dieser Werte k\"onnen wir den Fehler $s_{p_a}$ vernachl\"assigen, den unbekannten Fehler $s_r$ sollten wir aber zumindest absch\"atzen.
 
 \begin{eqnarray*}
-s_T & = & 0.5 \mbox{s} / 5 \mbox{Perioden} / 5 \mbox{Messungen} = 0.02 \mbox{s}\\
+s_T & = & 0.5 \mbox{s}\hspace{2pt}/\hspace{2pt}5\hspace{2pt}\mbox{Perioden}\hspace{2pt}/\hspace{2pt}5\hspace{2pt}\mbox{Messungen} = 0.02 \mbox{s}\\
 s_V & = & 10^{-5} \mbox{m}^3\\
 s_m & = & 10^{-4} \mbox{kg}\\
 s_r & = & 2\cdot 10^{-5} \mbox{m}\\
 \end{eqnarray*}
 
 \begin{eqnarray*}
-s_\kappa & = & \left( \frac{\partial \kappa}{\partial T}\right) ^2\cdot s_T^2 + \left( \frac{\partial \kappa}{\partial V}\right) ^2\cdot s_V^2 + \left( \frac{\partial \kappa}{\partial m}\right) ^2\cdot s_m^2 + \left( \frac{\partial \kappa}{\partial r}\right) ^2\cdot s_r^2 \\
+s_\kappa & = & \left( \frac{\partial \kappa}{\partial T}\right) ^2\cdot s_T^2 + \left( \frac{\partial \kappa}{\partial V}\right) ^2\cdot s_V^2 + \left( \frac{\partial \kappa}{\partial m}\right) ^2\cdot s_m^2 + \left( \frac{\partial \kappa}{\partial r}\right) ^2\cdot s_r^2\\
 & = & 0.00774
 \end{eqnarray*}
 
 \section*{Diskussion}
-
+Die Abweichung zu den Tabellenwerten betr\"agt etwa 0.00039 f\"ur CO$_2$, 0.0085 f\"ur Ar und 0.026 f\"ur N$_2$. Bis auf die Messung mit Stickstoff sind diese Differenzen kleiner als der berechnete Fehler. Die etwas gr\"ossere Abwei\-chung f\"ur Stickstoff ist h\"ochstwahrscheinlich auf eine schlechte Zeitmessung zur\"uckzuf\"uhren da die anderen Werte mit gleichen Bedingungen relativ genau berechnet werden konnten. Eine andere m\"ogliche Fehlerquelle w\"are ein unreines Gasgemisch im Glasbeh\"alter.
 
 \end{document}
