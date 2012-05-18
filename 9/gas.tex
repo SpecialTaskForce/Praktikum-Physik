@@ -30,17 +30,17 @@ m_0 = m_{Luft} \frac{P_0}{P_L}
 \end{equation}
 Der Druck unter Normalbedingungen $\rho_{STP}$ ist mit $P_{STP}$ = 101'325 Pa und $T_{STP}$ = 273.15 K
 \begin{equation}\label{eq:stp}
-\rho_{STP} = \frac{\rho T P_{STP}}{P T_{STP}}
+\varrho_{STP} = \frac{\rho T P_{STP}}{P T_{STP}}
 \end{equation}
 Aus
 \begin{eqnarray}
-m^*_{Luft} & = & \rho _{Luft} V_I + m_{Kolben} - m_{Waagschale} - \rho_{Luft} V_A \label{eq:rl} \\
+m^*_{Luft} & = & \rho _{Luft} V_I + m_{Kolben} - m_{Waagschale} - \rho_{Luft} V_A \\
 m^*_0 & = & \rho_{Luft} V_I \frac{P_0}{P_L} + m_{Kolben} - m_{Waagschale} - \rho_{Luft} V_A 
 \end{eqnarray}
 folgt
 \begin{eqnarray}
 m^*_0 - m^*_{Luft} & = & \rho_{Luft}V_I \left( \frac{P_0}{P_L}-1\right) \\
-\Rightarrow \rho_{Luft} & = & \frac{m^*_0 - m^*_{Luft}}{V_I \left( \frac{P_0}{P_L}-1\right)} 
+\Rightarrow \rho_{Luft} & = & \frac{m^*_0 - m^*_{Luft}}{V_I \left( \frac{P_0}{P_L}-1\right)}  \label{eq:rl}
 \end{eqnarray}
 wobei $\rho_{Luft}$ die Dichte der Luft, $V_I$ das Innenvolumen und $V_A$ das Gesamtvolumen des Kolbens ist. \\
 Durch Einsetzen von $\rho_{Luft}$ erh\"alt man
@@ -72,12 +72,14 @@ Ein Glaskolben ist mit Luft gefüllt und wird mit einer Balkenwaage gewogen um $
 \section*{Rohdaten}
 \begin{eqnarray*}
 P_L & = & 721.7 \mbox{mmHg} \\
-P_0 & = & 1 \mbox{Torr} \\
-m^*_{Luft} & = & 146.77 \mbox{g} \\
-m^*_{0} & = & 145.59 \mbox{g} \\
-m^*_{CO_2} & = & 147.46 \mbox{g} \\
-m^*_{Ar} & = & 147.28 \mbox{g} \\
-m^*_{N_2} & = & 146.75\mbox{g} \\
+P_0 & = & (1 \pm 0.5) \mbox{Torr} \\
+V_I & = & (1.054 \pm 0.01) \mbox{l} \\
+m^*_{Luft} & = & (146.77 \pm 0.02) \mbox{g} \\
+m^*_{0} & = & (145.59 \pm 0.02)  \mbox{g} \\
+m^*_{CO_2} & = & (147.46 \pm 0.02)  \mbox{g} \\
+m^*_{Ar} & = & (147.28 \pm 0.02)  \mbox{g} \\
+m^*_{N_2} & = & (146.75 \pm 0.02) \mbox{g} \\
+T & = & (24.5 \pm 0.5)\mbox{°C}
 \end{eqnarray*}
 
 
@@ -94,11 +96,27 @@ Dichte der Gase nach (\ref{eq:rg})
 \end{eqnarray*}
 Die Dichte konvertiert in STP nach (\ref{eq:stp})
 \begin{eqnarray*}
-\rho_{CO_2} = 2.038 \mbox{kgm}^{-3} \\
-\rho_{Ar} = 1.842 \mbox{kgm}^{-3} \\
-\rho_{N_2} = 1.265 \mbox{kgm}^{-3}
+\varrho_{CO_2} = 2.038 \mbox{kgm}^{-3} \\
+\varrho_{Ar} = 1.842 \mbox{kgm}^{-3} \\
+\varrho_{N_2} = 1.265 \mbox{kgm}^{-3}
 \end{eqnarray*}
+
+
 \section*{Fehlerrechnung}
+Nach (\ref{eq:stp}), (\ref{eq:rl}), (\ref{eq:const}) und (\ref{eq:rg}):
+\[ \varrho _{Gas} = \frac{TP_{STP}}{P_L T_{STP}} \frac{m^*_{Gas} - \left(  m^*_{Luft} - \frac{m^*_0 - m^*_{Luft}}{\frac{P_0}{P_L}-1}\right) }{V_I} \]
+Mit eingesetzten Werten der Messung mit Argon
+\begin{eqnarray*}
+\frac{\partial \varrho}{\partial m^*_{Gas}} & = & 1093.6 \\
+\frac{\partial \varrho}{\partial m^*_{0}} & = & -1095.1 \\
+\frac{\partial \varrho}{\partial m^*_{Luft}} & = & 0 \\
+\frac{\partial \varrho}{\partial P_0} & = & 0.001801 \\
+\frac{\partial \varrho}{\partial P_L} & = & 0 \\
+\frac{\partial \varrho}{\partial V_I} & = & -1755.21 \\
+\frac{\partial \varrho}{\partial T} & = & 0.00626 \\
+\end{eqnarray*}
+Daraus folgt ein Fehler
+\[ s_\varrho = 0.0357 \mbox{kgm}^{-3} \]
 
 
 \section*{Diskussion}
