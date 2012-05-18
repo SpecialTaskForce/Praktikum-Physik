@@ -19,30 +19,54 @@ Bestimmung der Dichte f\"ur die Gase N$_2$, Ar und CO$_2$. Die Werte sollen dana
 \section*{Motivation}
 Anhand dieses Experiments soll eine Methode zur Bestimmung der Dichte von drei allt\"aglichen Gasen erarbeitet werden.
 
-\section*{Sammlung}
-\[ p V = \varrho V R T \]
-\[ m_0 = m_{Luft} \frac{P_0}{P_L} \]
-\[ m^* g = Gas + kolben - Waagschale - Auftrieb \]
-
+\newpage
 \section*{Theorie}
-\[ m^* g = Gas + kolben - Waagschale - Auftrieb \]
+\begin{equation}
+m^* \cdot g = Gas + Kolben - Waagschale - Auftrieb
+\end{equation}
+\begin{equation}
+m_0 = m_{Luft} \frac{P_0}{P_L}
+\end{equation}
 Aus
-\[ m^*_{Luft} = \rho _{Luft} V_I + m_{Kolben} - m_{Waagschale} - \rho_{Luft} V_A \]
-\[ m^*_0 = \rho_{Luft} V_I \frac{P_0}{P_L} + m_{Kolben} - m_{Waagschale} - \rho_{Luft} V_A  \]
+\begin{eqnarray}
+m^*_{Luft} & = & \rho _{Luft} V_I + m_{Kolben} - m_{Waagschale} - \rho_{Luft} V_A \\
+m^*_0 & = & \rho_{Luft} V_I \frac{P_0}{P_L} + m_{Kolben} - m_{Waagschale} - \rho_{Luft} V_A 
+\end{eqnarray}
 folgt
-\[ m^*_0 - m^*_{Luft} = \rho_{Luft}V_I \left( \frac{P_0}{P_L}-1\right) \]
-\[ \Rightarrow \rho_{Luft} = \frac{m^*_0 - m^*_{Luft}}{V_I \left( \frac{P_0}{P_L}-1\right)} \]
+\begin{eqnarray}
+m^*_0 - m^*_{Luft} & = & \rho_{Luft}V_I \left( \frac{P_0}{P_L}-1\right) \\
+\Rightarrow \rho_{Luft} & = & \frac{m^*_0 - m^*_{Luft}}{V_I \left( \frac{P_0}{P_L}-1\right)} 
+\end{eqnarray}
 Durch Einsetzen von $\rho_{Luft}$
-\[ m_{Kolben} - m_{Waagschale} - \rho_{Luft} V_A = m^*_{Luft} - \rho _{Luft} V_I \]
+\begin{equation}
+m_{Kolben} - m_{Waagschale} - \rho_{Luft} V_A = m^*_{Luft} - \rho _{Luft} V_I
+\end{equation}
 Nun kann die Dichte bestimmt werden
-\[ \rho _{Gas} = \frac{m^*_{Gas} - (m_{Kolben} - m_{Waagschale} - \rho_{Luft} V_A)}{V_I} \]
-\end{document}
+\begin{equation}
+\rho _{Gas} = \frac{m^*_{Gas} - (m_{Kolben} - m_{Waagschale} - \rho_{Luft} V_A)}{V_I}
+\end{equation}
 
 
 \section*{Aufbau und Ablauf}
+\begin{multicols}{2}
+\includegraphics[width=6cm]{vakuum.pdf}
 
+\includegraphics[width=5cm]{wasser.pdf}
+\end{multicols}
+
+\noindent
+Ein Glaskolben ist mit Luft gefüllt und wird mit einer Balkenwaage gewogen um $m^*_{Luft}$ zu bestimmen. Als nächstes wird der Kolben mithilfe einer Vakuumpumpe evakuiert und erneut gewogen ($m^*_0$). Während dem evakuieren wird zudem der Restdruck $P_0$ mit einem Manometer gemessen. Nun wird der Kolben mit einem der drei Gasen gefüllt, erneut die Masse $m^*_{Gas}$ bestimmt und wieder evakuiert um das nächste Gas einfüllen zu können. Nachdem alle Gase gewogen wurden wird der Kolben mit Wasser gefüllt indem er erneut evakuiert und eines der Ventile in einem Wasserbecken geöffnet wird. Das Wasser im Kolben wird anschliessend in einem Messzylinder gemessen um $V_I$ zu bestimmen.
 
 \section*{Rohdaten}
+\begin{eqnarray*}
+P_L & = & 721.7 \mbox{mmHg} \\
+P_0 & = & 1 \mbox{Torr} \\
+m^*_{Luft} & = & 146.77 \mbox{g} \\
+m^*_{0} & = & 145.59 \mbox{g} \\
+m^*_{CO_2} & = & 147.46 \mbox{g} \\
+m^*_{Ar} & = & 147.28 \mbox{g} \\
+m^*_{N_2} & = & 146.75\mbox{g} \\
+\end{eqnarray*}
 
 
 \section*{Auswertung}
@@ -52,3 +76,5 @@ Nun kann die Dichte bestimmt werden
 
 
 \section*{Diskussion}
+
+\end{document}
