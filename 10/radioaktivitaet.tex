@@ -19,20 +19,21 @@ Messung der Abschirmung von radioaktiver Strahlung durch Blei und Aluminium und 
 In diesem Experiment wird experimentell nachgewiesen, dass das Absorptionsgesetz seine Berechtigung hat.
 
 \section*{Theorie}
-\begin{equation}
-J = J_0 e^{-\mu x}
-\end{equation}
-
+Die Intensit\"at $J$ ist definiert durch Anzahl Zerf\"alle $N$ pro Zeiteinheit $\Delta T$
 \begin{equation}
 J =\frac{N}{\Delta T}
 \end{equation}
-
+Aus dem Absorptionsgesetz mit Absorberdicke $x$ und der Aktivit\"at ohne Abschirmung $J_0$
 \begin{equation}
-\frac{S_y}{y} = \frac{1}{\sqrt{N}}
+J = J_0 e^{-\mu x}
 \end{equation}
-
+folgt f\"ur den Massenabsorptionskoeffizienten $\mu_m$
 \begin{equation}
-t = \frac{N}{J}
+\mu_m = - \frac{ln(\frac{J}{J_0})}{x \varrho}
+\end{equation}
+Die Poisson-Verteilung mit Mittelwert $\lambda$ ist
+\begin{equation}
+P(k) = \frac{\lambda^k \cdot e^{-\lambda}}{k!}
 \end{equation}
 
 \section*{Rohdaten}
